@@ -10,7 +10,7 @@ class user(ABC):
     def get_role(self):
         pass
     def display(self):
-        print("name : ",self.name,"\nrole : ",self.get_role(),"\nnumber of years : ",self.calculate)
+        print("name : ",self.name,"\nrole : ",self.get_role(),"\nnumber of years : ",self.calculate())
 class customer(user):
     def get_role(self):
         return "customer"
