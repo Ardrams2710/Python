@@ -17,14 +17,14 @@ class Bike(vehicle):
         super().__init__(_vehicle_id, _base_rate)
         self.bike_type=bike_type
     def rental_charge(self):
-        return self._base_rate * 0.5
+        return self._base_rate*0.5
     def calculate_rental(vehicle):
         return vehicle.rental_charge()
 car = car("CAR001", 100.0, 4)
 bike = Bike("BIKE001", 100.0, "Scooter")
 print(car.display_details())
 print(calculate_rental(car))
-print(Bike.display_details())
-print(calculate_rental(Bike))
+print(+bike.display_details())
+print(calculate_rental(bike))
 
 
